@@ -1,0 +1,62 @@
+[
+  {
+    "image": "assets/galerija/varzybos-latvija-komanda.jpg",
+    "caption": "Komanda su medaliais po tarptautinių varžybų Latvijoje",
+    "category": "Varžybos"
+  },
+  {
+    "image": "assets/galerija/varzybos-latvija.jpg",
+    "caption": "Pergalė atvirame bokso čempionate Latvijoje",
+    "category": "Varžybos"
+  },
+  {
+    "image": "assets/galerija/varzybos-palanga.jpg",
+    "caption": "Apdovanojimai Palangos sporto centre",
+    "category": "Varžybos"
+  },
+  {
+    "image": "assets/galerija/varzybos-komanda.jpg",
+    "caption": "Klubo boksininkai su treneriu prie ringo",
+    "category": "Varžybos"
+  },
+  {
+    "image": "assets/galerija/varzybos-vilniaus-rajonas.jpg",
+    "caption": "Vilniaus rajono jaunių bokso turnyras",
+    "category": "Varžybos"
+  },
+  {
+    "image": "assets/galerija/varzybos-marijampole.jpg",
+    "caption": "Medaliai ir diplomai Marijampolėje",
+    "category": "Varžybos"
+  },
+  {
+    "image": "assets/galerija/varzybos-klaipeda-3.jpg",
+    "caption": "Teisėjas skelbia pergalę",
+    "category": "Varžybos"
+  },
+  {
+    "image": "assets/galerija/varzybos-klaipeda-1.jpg",
+    "caption": "Lietuvos jaunučių čempionatas Klaipėdoje",
+    "category": "Varžybos"
+  },
+  {
+    "image": "assets/galerija/varzybos-klaipeda-2.jpg",
+    "caption": "Trys medaliai iš Klaipėdos",
+    "category": "Varžybos"
+  },
+  {
+    "image": "assets/galerija/treniruote-sparingas.jpg",
+    "caption": "Sparingai Grigiškių gimnazijos salėje",
+    "category": "Treniruotės"
+  },
+  {
+    "image": "assets/galerija/treniruote-1.jpg",
+    "caption": "Technikos treniruotė su treneriu",
+    "category": "Treniruotės"
+  },
+  {
+    "image": "assets/galerija/treniruote-2.jpg",
+    "caption": "Kojų darbas ir gynyba",
+    "category": "Treniruotės"
+  }
+]
