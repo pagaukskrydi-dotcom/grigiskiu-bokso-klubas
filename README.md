@@ -1,23 +1,24 @@
 # Grigiškių bokso klubo svetainė
 
-Statinė svetainė: `index.html`, `styles.css`, `site.js` ir paveikslėliai `assets/` aplanke.
+Statinė svetainė (`index.html`, `styles.css`, `site.js`, `assets/`) ir valdymo programėlė `/valdymas/`, veikianti per Cloudflare Pages.
 
-## Galerija
+## Valdymo programėlė
 
-Galerijos nuotraukos aprašytos faile `data/gallery.json`, o pačios nuotraukos laikomos `assets/galerija/`.
+Adresas: `https://<domenas>/valdymas/`
 
-Nuotraukas patogiausia tvarkyti per **Pages CMS** (https://app.pagescms.org):
+Joje tvarkoma: galerija, treniruočių tvarkaraštis, grupės, tekstai, kontaktai, plakatai ir vartotojai. Telefone ją galima įsidėti į pradžios ekraną.
 
-1. Prisijunkite su GitHub paskyra.
-2. Pasirinkite repozitoriją `grigiskiu-bokso-klubas`.
-3. Atidarykite **Galerija** → **Add an entry** (pridėti nuotrauką).
-4. Įkelkite nuotrauką, parašykite aprašymą, pasirinkite kategoriją ir spauskite **Save**.
+Pirmą kartą atidarius sukuriama savininko paskyra. Savininkas gali pridėti kitus žmones (skiltis „Vartotojai“).
 
-Sąrašo viršuje esančios nuotraukos svetainėje rodomos pirmos. Eilutes galima tempti, kad pakeistumėte tvarką.
+## Kaip veikia
 
-Kategorijos: Treniruotės, Varžybos, Stovyklos, Renginiai, Laisvalaikis. Jos nustatytos faile `.pages.yml`; naujai kategorijai reikia ją pridėti ten ir `index.html` faile (galerijos filtrų mygtukai).
+- `functions/` – Cloudflare Pages Functions (API): `/api/content`, `/api/auth/*`, `/api/admin/*`, `/media/*`.
+- `lib/` – bendras serverio kodas ir pradinis turinys (`lib/defaults.js`).
+- Turinys, vartotojai ir įkeltos nuotraukos saugomi Cloudflare KV saugykloje, prijungtoje pavadinimu **GBK**.
+- Svetainė (`site.js`) turinį paima iš `/api/content`. Jei API nepasiekiamas, rodomas HTML faile esantis turinys.
 
-## Kita
+## Cloudflare nustatymai
 
-- Antraščių šriftas: `assets/fonts/NimbusSansNarrow-Bold.otf`.
-- Žemėlapis rodomas tik tikroje svetainėje (ne įterptose peržiūrose).
+1. Workers & Pages → Create → Pages → Connect to Git → ši repozitorija. Build command: tuščia, output directory: `/`.
+2. KV saugykla `gbk` → projekto Settings → Bindings → KV namespace, kintamasis **GBK**.
+3. Po pakeitimų – Deployments → Retry deployment.

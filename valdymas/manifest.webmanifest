@@ -1,0 +1,16 @@
+{
+  "name": "GBK valdymas",
+  "short_name": "GBK valdymas",
+  "description": "Grigiškių bokso klubo svetainės valdymas",
+  "lang": "lt",
+  "start_url": "/valdymas/",
+  "scope": "/valdymas/",
+  "display": "standalone",
+  "background_color": "#131612",
+  "theme_color": "#131612",
+  "icons": [
+    { "src": "/valdymas/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/valdymas/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/valdymas/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
