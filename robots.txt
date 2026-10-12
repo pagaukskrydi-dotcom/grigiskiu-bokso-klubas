@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /valdymas/
+Disallow: /api/
+
+Sitemap: https://grigiskiuboksoklubas.lt/sitemap.xml
